@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotosVC" customModule="a_little_about_porto" customModuleProvider="target">
+            <connections>
+                <outlet property="bullet1Img" destination="hqA-FT-rCi" id="EMA-Od-YTy"/>
+                <outlet property="bullet2Img" destination="WRr-jf-RNb" id="muz-di-fT7"/>
+                <outlet property="bullet3Img" destination="1rU-wB-4Ed" id="s6J-uP-pDa"/>
+                <outlet property="bullet4Img" destination="Pti-rW-USQ" id="IMb-8Y-z27"/>
+                <outlet property="bullet5Img" destination="icp-dT-XaD" id="m2A-v3-ZSV"/>
+                <outlet property="bullet6Img" destination="F28-bY-qg6" id="WYF-ye-GxQ"/>
+                <outlet property="photoImg" destination="ZZf-u8-IFa" id="WcK-Te-ZTV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZZf-u8-IFa">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Srg-cM-C8l">
+                    <rect key="frame" x="233" y="550" width="135" height="10"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bulletYellow" translatesAutoresizingMaskIntoConstraints="NO" id="hqA-FT-rCi">
+                            <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="10" id="nFD-sa-kNG"/>
+                                <constraint firstAttribute="height" constant="10" id="upV-r2-wkw"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bulletYellow" translatesAutoresizingMaskIntoConstraints="NO" id="WRr-jf-RNb">
+                            <rect key="frame" x="25" y="0.0" width="10" height="10"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bulletYellow" translatesAutoresizingMaskIntoConstraints="NO" id="1rU-wB-4Ed">
+                            <rect key="frame" x="50" y="0.0" width="10" height="10"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bulletYellow" translatesAutoresizingMaskIntoConstraints="NO" id="Pti-rW-USQ">
+                            <rect key="frame" x="75" y="0.0" width="10" height="10"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bulletYellow" translatesAutoresizingMaskIntoConstraints="NO" id="icp-dT-XaD">
+                            <rect key="frame" x="100" y="0.0" width="10" height="10"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bulletYellow" translatesAutoresizingMaskIntoConstraints="NO" id="F28-bY-qg6" userLabel="Bullet6 Img">
+                            <rect key="frame" x="125" y="0.0" width="10" height="10"/>
+                        </imageView>
+                    </subviews>
+                    <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                        <rect key="frame" x="133" y="750" width="135" height="10"/>
+                    </variation>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Srg-cM-C8l" secondAttribute="bottom" constant="40" id="1Pu-AP-lzO"/>
+                <constraint firstItem="Srg-cM-C8l" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9Ht-SM-1dl"/>
+                <constraint firstItem="ZZf-u8-IFa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="AZ5-Qs-zUG"/>
+                <constraint firstItem="ZZf-u8-IFa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Gkc-7P-gDi"/>
+                <constraint firstAttribute="trailing" secondItem="ZZf-u8-IFa" secondAttribute="trailing" id="Phh-Aj-BWO"/>
+                <constraint firstAttribute="bottom" secondItem="ZZf-u8-IFa" secondAttribute="bottom" id="vda-Fp-G0p"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="bulletYellow" width="512" height="512"/>
+    </resources>
+</document>
